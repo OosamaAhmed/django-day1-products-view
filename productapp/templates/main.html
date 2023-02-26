@@ -49,12 +49,12 @@
     <div class="row d-flex ">
         {% for x in myproducts %}
             <div class=" col-lg-2 col-md-6 col-sm-6 col-xs-12">
-                <div class="card m-2">
+                <div class="card m-2 bg-dark-subtle ">
                   <div class="card-body">
                 <!-- {{myproducts}} -->
-                <h5 class="card-title">{{x.name}}</h5>
+                <h5 class="card-title bg-danger text-light text-center rounded-5 p-2">{{x.name}}</h5>
                 <p class="card-text"> price : {{x.price}} </p>
-                <a href="{% url 'show' x.id %}" class="btn btn-primary">Show</a>
+                <a href="{% url 'show' x.id %}" class="btn btn-primary text-center w-100">Show</a>
             </div>   
                 </div>
            

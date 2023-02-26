@@ -46,17 +46,17 @@
 
         <!-- ---------------(list of product )-------------------- -->
         <div class="container-fluid">
-            <div class="row d-flex">
+            <div class=" bg-dark m-1 ">
                 <!-- {{n}} -->
-                <div class="card col-4 m-1 " style="width: 24%!important;">
+                <div class="text-light m-auto  w-50  " >
                     <div class="card-body">
                         <!-- {{myproducts}} -->
-                            <h5 class="card-title">name : {{n.name}}</h5>
-                            <p class="card-text"> description : {{n.description}} </p>
+                <h5 class="card-title bg-danger text-light text-center rounded-5 p-2">{{n.name}}</h5>
+                            <p class="card-text text-center fs-2">  {{n.description}} </p>
 
-                            <p class="card-text"> price : {{n.price}} </p>
+                            <p class="card-text text-center"> price : {{n.price}} </p>
 
-                        <a href="{% url 'home' %}" class="btn btn-primary">back</a>
+                        <a href="{% url 'home' %}" class="btn btn-primary w-100">back</a>
                     </div>
                 </div>
             </div>
